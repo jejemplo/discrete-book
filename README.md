@@ -43,16 +43,11 @@ Then change to the `discrete-book` folder:
 If everything has been set up properly above, you can now execute the following
 commands to build the book.  To create a PDF, you can enter:
 
-`pretext build pdf -w`
+`python -m pretext build print`
 
 To make the HTML version:
 
-`pretext build html -w -d`
-
-The `-w` and `-d` flags are only needed the first time you compile, to extract
-the WeBWorK exercises and create SVGs for the images.  Use the flags again only
-if you edit these elements in the source. 
-
+`python -m pretext build web`
 
 ## Contributing
 
